@@ -1,0 +1,12 @@
+azure-mgmt-resource>=18.0.0
+azure-identity>=1.5.0
+azure-mgmt-databricks==1.1.0b1
+msrestazure
+azure-mgmt-compute
+azure-mgmt-resource
+azure-core
+azure-mgmt-network
+azure-mgmt-keyvault
+python-dotenv
+azure-keyvault-secrets
+azure-identity
