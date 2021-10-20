@@ -11,10 +11,10 @@
 ### Pre-requisites
 
 1. Once cloned the repo, make sure the terminal is pointing at the right path in the terminal
-![updateMRG](./images/terminal.png) 
+![updateMRG](./Images/terminal.png) 
 2. Please utilize the workpsace.env file for performing any validation. Please note that all the parameters have to be "string" data type in workspace.env file.
 3. Make sure to copy the relative path of workspace.env and make sure to place it as a Path argument of 'dotenv_path' variable on all the python scripts
-![updateMRG](./images/relativepath.png)![updateMRG](./images/path.png) 
+![updateMRG](./Images/relativepath.png)![updateMRG](./Images/path.png) 
 4. Run the Az login command in the terminal and login in the browser to authenticate your credentials into Azure. This will open a browser, asking you to sign in. Please acknowledge and it will be logged into Azure. You may close the browser after this is done
 5. Using a subscription (Azure Databricks RP BugBash 01), create a ResourceGroup to be utilized for testing the scenarios
 
@@ -33,7 +33,7 @@
 ### Update a Databricks Workspace
 1. For validating update on a Databricks Workspace, please utilize the updateWorkspace.py script and workspace.env file
 2. For an existing workspace, take a note of the 'managedResourceGroupID' from the export template of the databricks workspace page in the azure portal.
- ![updateMRG](./images/UpdateMRG.png)  
+ ![updateMRG](./Images/UpdateMRG.png)  
 3. In this scenario, you can perform update on tags and SKU of a workspace but cannot update enableNPIP. Tags can be updated on line 67 in updateWorkspace.py script.
 4. In the Visual studio code, open the workspace.env and make sure to provide the parameters;
 	#### a) 'resource_group' - Name of the Resource Group
