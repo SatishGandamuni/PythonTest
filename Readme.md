@@ -4,15 +4,17 @@
 1. Install python 3.7 or above from [Python code](https://www.python.org/downloads/)
 2. Install visual studio code - any version - 1.58.1 
 3. Install Python extension for Visual studio code by selecting Python Extension in "Extension" tab
-4. Clone the repo or create a folder for storing all the scripts in the repo.
+4. Clone the repo or create a folder for storing all the scripts from the repo.
 5. Open that folder in Visual studio. If cloned, you should be able to see the all the scripts (createWorkspace.py, updateWorkspace.py, readWorkspace.py, deleteWorkspace.py) with a readme.md, requirements.txt, and workspace.env file. The workspace.env file is where we pass the parameters with our desired inputs and configure Databricks workspace. The requirements.txt file contains all the required python libraries
 6. Now run this command - pip install -r requirements.txt
 
 ### Pre-requisites
 
-1. Once cloned the repo, make sure the terminal is pointing at the right path to run scripts without errors
+1. Once cloned the repo, make sure the terminal is pointing at the right path in the terminal
+![updateMRG](./images/terminal.png) 
 2. Please utilize the workpsace.env file for performing any validation. Please note that all the parameters have to be "string" data type in workspace.env file.
 3. Make sure to copy the relative path of workspace.env and make sure to place it as a Path argument of 'dotenv_path' variable on all the python scripts
+![updateMRG](./images/relativepath.png)![updateMRG](./images/path.png) 
 4. Run the Az login command in the terminal and login in the browser to authenticate your credentials into Azure. This will open a browser, asking you to sign in. Please acknowledge and it will be logged into Azure. You may close the browser after this is done
 5. Using a subscription (Azure Databricks RP BugBash 01), create a ResourceGroup to be utilized for testing the scenarios
 
@@ -30,7 +32,8 @@
 
 ### Update a Databricks Workspace
 1. For validating update on a Databricks Workspace, please utilize the updateWorkspace.py script and workspace.env file
-2. For an existing workspace, take a note of the 'managedResourceGroupID' from the export template of the databricks workspace page in the azure portal. 
+2. For an existing workspace, take a note of the 'managedResourceGroupID' from the export template of the databricks workspace page in the azure portal.
+ ![updateMRG](./images/UpdateMRG.png)  
 3. In this scenario, you can perform update on tags and SKU of a workspace but cannot update enableNPIP. Tags can be updated on line 67 in updateWorkspace.py script.
 4. In the Visual studio code, open the workspace.env and make sure to provide the parameters;
 	#### a) 'resource_group' - Name of the Resource Group
