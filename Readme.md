@@ -1,4 +1,4 @@
-## Markdown file for python documentation
+## Documentation
 ### Introduction
 
 1. Install python 3.7 or above from [Python code](https://www.python.org/downloads/)
