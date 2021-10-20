@@ -14,7 +14,9 @@
 ![updateMRG](./Images/terminal.png) 
 2. Please utilize the workpsace.env file for performing any validation. Please note that all the parameters have to be "string" data type in workspace.env file.
 3. Make sure to copy the relative path of workspace.env and make sure to place it as a Path argument of 'dotenv_path' variable on all the python scripts
-![updateMRG](./Images/relativepath.png)![updateMRG](./Images/path.png) 
+
+![updateMRG](./Images/relativepath.png) ![updateMRG](./Images/path.png)
+
 4. Run the Az login command in the terminal and login in the browser to authenticate your credentials into Azure. This will open a browser, asking you to sign in. Please acknowledge and it will be logged into Azure. You may close the browser after this is done
 5. Using a subscription (Azure Databricks RP BugBash 01), create a ResourceGroup to be utilized for testing the scenarios
 
