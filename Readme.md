@@ -1,7 +1,7 @@
 # Validate CRUD operations on Azure Databricks Workspace using Python
 ## Introduction
 
-This validation involves performing CRUD operations on Azure Databricks Workspace using Python. Some of the pre-requisites for testing this validations:
+This validation involves performing CRUD operations on Azure Databricks Workspace using Python. Some of the pre-requisites for testing this validation:
 
 1. Install python 3.7 or above from [Python code](https://www.python.org/downloads/)
 2. Install visual studio code or any preferred IDE
@@ -15,7 +15,7 @@ This validation involves performing CRUD operations on Azure Databricks Workspac
 7. Once cloned the repo, make sure the terminal is pointing at the right path in the terminal
 ![updateMRG](./Images/terminal.png) 
 8. Please utilize the workpsace.env file for performing any validation. Please note that all the parameters have to be "string" data type in workspace.env file.
-9. Make sure to copy the relative path of workspace.env and make sure to place it as a Path argument of 'dotenv_path' variable on all the python scripts
+9. Make sure to copy the relative path of workspace.env and paste it as a Path argument of 'dotenv_path' variable on all the python scripts
 
 ![updateMRG](./Images/relativepath.png) ![updateMRG](./Images/path.png) 
 
@@ -26,7 +26,7 @@ This validation involves performing CRUD operations on Azure Databricks Workspac
 11. Using a subscription (Azure Databricks RP BugBash 01), create a ResourceGroup manually using Azure portal
 
 ### Create a plain vanilla Workspace
-1. Files used for this scenario: createWorkspace.py and workspace.env
+1. Files used for this scenario: **createWorkspace.py** and **workspace.env**
 2. In the workspace.env, specify the parameters of the variables:
 	##### a) 'resource_group' - Name of the Resource Group
 	##### b) 'WORKSPACE_NAME' - Name of the Databricks Workspace to be created 
@@ -41,7 +41,7 @@ This validation involves performing CRUD operations on Azure Databricks Workspac
 4. You should be able to see the workspace created in the resource group within the Azure Portal
 
 ### Update a Databricks Workspace
-1. Files used for this scenario: updateWorkspace.py and workspace.env
+1. Files used for this scenario: **updateWorkspace.py** and **workspace.env**
 2. For an existing workspace, take a note of the 'managedResourceGroupID' from the export template of the databricks workspace page in the azure portal.
  ![updateMRG](./Images/UpdateMRG.png)  
 3. In this scenario, you can perform update on tags and SKU of a workspace but cannot update enableNPIP. Tags can be updated on line 67 in updateWorkspace.py script.
@@ -59,7 +59,7 @@ This validation involves performing CRUD operations on Azure Databricks Workspac
 6. Refresh your workspace in the Azure portal. You should be able to see workspace tags and SKU tier to be updated
 
 ### Read a Databricks Workspace
-1. Files used for this scenario: readWorkspace.py and workspace.env
+1. Files used for this scenario: **readWorkspace.py** and **workspace.env**
 2. In the Visual studio code, open the workspace.env and specify the parameters of the variables;
 	##### a) 'resource_group' - Name of the Resource Group
 	##### b) 'WORKSPACE_NAME' - Name of the Databricks Workspace to be read
@@ -72,7 +72,7 @@ This validation involves performing CRUD operations on Azure Databricks Workspac
 5. You should be able to see the details of the workspace displayed in the terminal
 
 ### Delete a Databricks Workspace
-1. Files used for this scenario: deleteWorkspace.py and workspace.env
+1. Files used for this scenario: **deleteWorkspace.py** and **workspace.env**
 2. In the Visual studio code, open the workspace.env and specify the parameters of the variables;
 	##### a) 'resource_group' - Name of the Resource Group
 	##### b) 'WORKSPACE_NAME' - Name of the Databricks Workspace to be deleted (Note: This operation only deletes the Databricks Workspace)
